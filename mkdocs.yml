@@ -1,0 +1,79 @@
+site_name: Place of Worship
+site_url: https://www.placeofworship.in
+site_author: Place of Worship
+site_description: Place of Worship Website
+theme:
+  name: material
+  language: en
+  logo:  assets/pow-logo.png
+  favicon: assets/pow-favicon.png
+  palette:
+      # primary: black
+      # accent: white
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.snippets:
+     auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/placeofworship
+      name: Place of Worship on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/placeofworship
+      name: Place of Worship on GitHub
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+  - social:
+      cards_layout_options:
+        background_color: "#06038D"
+
+nav:
+  - Home: index.md
+  - Products: products.md
+  - Services: services.md
+  - Careers: careers.md
+  - Store: store.md
+  - Contact: contact.md
+
+copyright: Copyright &copy 2024 <a href="https://www.github.com/placeofworship">Place of Worship</a>. All rights reserved.
