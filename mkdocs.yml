@@ -1,7 +1,7 @@
 site_name: Place of Worship
 site_url: https://www.placeofworship.in
 site_author: Place of Worship
-site_description: Place of Worship Website
+site_description: An place-of-worship management platform.
 theme:
   name: material
   language: en
